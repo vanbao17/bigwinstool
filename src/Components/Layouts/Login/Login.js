@@ -57,7 +57,7 @@ function Login() {
           </div>
           <div className={cx("formlogin")}>
             <div className={cx("form")}>
-              <span></span>
+              <span className={cx("titleinput1")}>Tên đăng nhập</span>
               <div className={cx("container_input")}>
                 <input
                   ref={refUsername}
@@ -66,8 +66,8 @@ function Login() {
                   name="username"
                 ></input>
               </div>
+              <span className={cx("titleinput2")}>Mật khẩu</span>
               <div className={cx("container_input")}>
-                <span></span>
                 <input
                   ref={refPassword}
                   type="password"
