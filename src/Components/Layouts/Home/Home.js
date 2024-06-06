@@ -52,7 +52,7 @@ function Home() {
       })
       .then((data) => {
         if (data != undefined || data.length != 0) {
-          const iduser = data[0].id_user;
+          const iduser = username == "Admin" ? 1 : data[0].id_user;
           const options1 = {
             method: "POST",
             headers: {

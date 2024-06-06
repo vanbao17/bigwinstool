@@ -276,6 +276,7 @@
   .form {
     display: flex;
     flex-direction: column;
+    margin-top: -40px;
     .container_input {
       display: flex;
       flex-direction: column;
@@ -295,6 +296,7 @@
       margin-left: -5px;
       margin-right: 13px;
       margin-top: -13px;
+      margin-bottom: 10px;
       background-color: transparent;
       outline: none;
       border-radius: 10px;

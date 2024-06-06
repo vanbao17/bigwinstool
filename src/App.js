@@ -24,17 +24,7 @@ function App() {
               }
             }
             const Page = item.component;
-            console.log(
-              <Route
-                key={index}
-                path={item.path}
-                element={
-                  <Layout>
-                    <Page data={item.path}></Page>
-                  </Layout>
-                }
-              ></Route>
-            );
+
             return (
               <Route
                 key={index}
