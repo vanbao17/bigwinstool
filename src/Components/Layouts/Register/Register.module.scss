@@ -22,6 +22,7 @@
     background-size: cover;
     width: 100%;
     height: 520px;
+    padding-left: 20px;
     // height: 100%;
     // width: 30%;
     margin: 0px auto;
@@ -56,7 +57,7 @@
   .form {
     display: flex;
     flex-direction: column;
-    margin-top: -10px;
+    margin-top: 23px;
     .container_input {
       display: flex;
       flex-direction: column;
@@ -66,7 +67,7 @@
       background-color: transparent;
       outline: none;
       border-radius: 10px;
-      margin-bottom: 57px;
+      margin-bottom: 45px;
       border: none;
     }
   }
@@ -90,7 +91,7 @@
     display: flex;
     gap: 20px;
     margin-top: 10px;
-    margin-left: -15px;
+    margin-left: -37px;
     padding-bottom: 30px;
     img {
       margin: 0px auto;
@@ -137,7 +138,6 @@
     width: 322px;
     margin: 0px auto;
     position: absolute;
-    top: 104px;
     .title {
       display: block;
       font-size: 20px;
@@ -148,7 +148,7 @@
   }
   .infor {
     margin: 10%;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 55px;
     height: 55px;
     img {
@@ -165,8 +165,8 @@
     .container_input {
       display: flex;
       flex-direction: column;
-      margin-left: 65px;
-      margin-bottom: 33px;
+      margin-left: 48px;
+      margin-bottom: 26px;
       margin-right: -113px;
     }
     .container_input span {
@@ -178,7 +178,7 @@
     .container_input input {
       // padding: 16px;
       height: 53px;
-      margin-left: -5px;
+      margin-left: 10px;
       margin-right: 13px;
       margin-top: -13px;
       background-color: transparent;
@@ -208,7 +208,7 @@
     display: flex;
     gap: 20px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 30px;
     img {
       margin: 0px auto;
       width: 180px;
@@ -243,8 +243,8 @@
   .container_center {
     background-size: cover;
     width: 460px;
+    top: 8%;
     height: 520px;
-
     // height: 100%;
     // width: 30%;
     margin: 0px auto;
@@ -254,7 +254,6 @@
     width: 322px;
     margin: 0px auto;
     position: absolute;
-    top: 143px;
     .title {
       display: block;
       font-size: 20px;
@@ -265,7 +264,7 @@
   }
   .infor {
     margin: 10%;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 55px;
     height: 55px;
     img {
@@ -278,13 +277,13 @@
   .form {
     display: flex;
     flex-direction: column;
-    margin-top: -40px;
+    gap: 10px;
     .container_input {
       display: flex;
       flex-direction: column;
-      margin-left: 65px;
-      margin-bottom: 33px;
-      margin-right: -58px;
+      margin-left: 48px;
+      margin-bottom: 26px;
+      margin-right: -113px;
     }
     .container_input span {
       margin-top: 16px;
@@ -295,10 +294,9 @@
     .container_input input {
       // padding: 16px;
       height: 53px;
-      margin-left: -5px;
+      margin-left: 10px;
       margin-right: 13px;
       margin-top: -13px;
-      margin-bottom: 10px;
       background-color: transparent;
       outline: none;
       border-radius: 10px;
@@ -325,6 +323,7 @@
     width: 100%;
     display: flex;
     gap: 20px;
+    margin-top: 10px;
     margin-left: 30px;
     img {
       margin: 0px auto;

@@ -74,7 +74,7 @@ function Register() {
             width: "15%",
             height: 0,
             top: "0",
-            right: "12%",
+            right: "13%",
             position: "absolute",
           }}
         >
@@ -91,7 +91,7 @@ function Register() {
               position: "absolute",
               overflow: "hidden",
               backgroundColor: "#0E012D",
-              border: "2px solid #420655",
+              border: "12px solid #420655",
               zIndex: "999",
               padding: "0px 12px",
               borderRadius: "50px",
@@ -124,9 +124,8 @@ function Register() {
               position: "absolute",
               overflow: "hidden",
               backgroundColor: "#0E012D",
-              border: "2px solid #420655",
+              border: "12px solid #420655",
               zIndex: "999",
-              padding: "0px 12px",
               borderRadius: "50px",
             }}
             frameBorder="0"
@@ -139,8 +138,18 @@ function Register() {
         <div className={cx("content-left")}></div>
         <div
           className={cx("container_center")}
-          style={{ backgroundImage: `url(${images.formRegis})` }}
+          // style={{ backgroundImage: `url(${images.formRegis})` }}
         >
+          <img
+            style={{
+              width: "90%",
+              height: "auto",
+              zIndex: "0",
+              top: "50px",
+              position: "absolute",
+            }}
+            src={images.formRegis}
+          ></img>
           <div className={cx("infor")}></div>
           <div className={cx("formlogin")}>
             <div className={cx("form")}>

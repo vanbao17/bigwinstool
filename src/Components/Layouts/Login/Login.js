@@ -85,9 +85,8 @@ function Login() {
               position: "absolute",
               overflow: "hidden",
               backgroundColor: "#0E012D",
-              border: "2px solid #420655",
+              border: "12px solid #420655",
               zIndex: "999",
-              padding: "0px 12px",
               borderRadius: "50px",
             }}
             frameBorder="0"
@@ -116,12 +115,10 @@ function Login() {
             width="100%"
             style={{
               position: "absolute",
-              position: "absolute",
               overflow: "hidden",
               backgroundColor: "#0E012D",
-              border: "2px solid #420655",
+              border: "12px solid #420655",
               zIndex: "999",
-              padding: "0px 12px",
               borderRadius: "50px",
             }}
             frameBorder="0"
@@ -135,14 +132,27 @@ function Login() {
         <div className={cx("content-left")}></div>
         <div
           className={cx("container_center")}
-          style={{ backgroundImage: `url(${images.formLogin})` }}
+          // style={{ backgroundImage: `url(${images.formLogin})` }}
         >
-          <div className={cx("infor")}>
+          <img
+            style={{
+              width: "90%",
+              height: "auto",
+              zIndex: "0",
+              top: "50px",
+              position: "absolute",
+            }}
+            src={images.formLogin}
+          ></img>
+          <div className={cx("infor")} style={{ zIndex: "999" }}>
             <div>
-              <img src={images.logo}></img>
+              <img
+                style={{ zIndex: "999", position: "relative" }}
+                src={images.logo}
+              ></img>
             </div>
           </div>
-          <div className={cx("formlogin")}>
+          <div className={cx("formlogin")} style={{ zIndex: "999" }}>
             <div className={cx("form")}>
               <span className={cx("titleinput1")}>Tên đăng nhập</span>
               <div className={cx("container_input")}>
