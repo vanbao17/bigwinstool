@@ -67,7 +67,7 @@ function Login() {
             width: "15%",
             height: 0,
             top: "4%",
-            right: "12%",
+            right: "13.5%",
             position: "absolute",
           }}
         >
