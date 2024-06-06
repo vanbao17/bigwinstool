@@ -25,13 +25,13 @@ function SideBar() {
           <p>Game</p>
           <ul>
             <li>
-              <a href="/admin">User</a>
+              <a href="/Admin">User</a>
             </li>
             <li>
-              <a href="/admin/room">Phòng</a>
+              <a href="/Admin/Room">Phòng</a>
             </li>
             <li>
-              <a href="/admin/game">Game</a>
+              <a href="/Admin/Game">Game</a>
             </li>
           </ul>
         </div>

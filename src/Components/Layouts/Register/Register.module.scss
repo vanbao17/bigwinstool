@@ -1,26 +1,17 @@
 .wrapper {
   width: 100%;
-  height: 100%;
-  background-image: url("https://slottool.top/anh1.jpg");
-}
-html *::-webkit-scrollbar {
-  border-radius: 0;
-  width: 8px;
-}
-html *::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(22, 24, 35, 0.29);
-}
-html *::-webkit-scrollbar-track {
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  // background-image: url("http://slottool.top/anh1.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .container {
-    width: 90%;
-    height: 100%;
-    transform: translateY(5%);
-    background-color: #fff;
+    width: 100%;
+    height: 90vh;
+    transform: translateY(3%);
     border-radius: 25px;
     display: flex;
     margin: 0px auto;
@@ -28,105 +19,324 @@ html *::-webkit-scrollbar-track {
     justify-content: space-between;
   }
   .container_center {
-    padding: 20px 0px;
-    height: 100%;
-    width: 80%;
+    background-size: cover;
+    width: 100%;
+    height: 520px;
+    // height: 100%;
+    // width: 30%;
     margin: 0px auto;
-    padding-bottom: 50px;
+    position: relative;
+  }
+  .formlogin {
+    width: 322px;
+    margin: 0px auto;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 47px;
+    .title {
+      display: block;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+  .infor {
+    margin: 10%;
+    margin-top: 5%;
+    width: 55px;
+    height: 55px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    .container_input {
+      display: flex;
+      flex-direction: column;
+    }
+    .container_input input {
+      padding: 14px 16px;
+      background-color: transparent;
+      outline: none;
+      border-radius: 10px;
+      margin-bottom: 57px;
+      border: none;
+    }
+  }
+  .remember_pass {
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .warning_login {
+    display: block;
+    height: 15px;
+    margin-top: 25px;
+    margin-left: 50px;
+    span {
+      color: rgb(250, 41, 41);
+    }
+  }
+  .container_button {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: -15px;
+    padding-bottom: 30px;
+    img {
+      margin: 0px auto;
+      width: 180px;
+      cursor: pointer;
+    }
+    // button {
+    //   border: none;
+    //   outline: none;
+    //   border-radius: 30px;
+    //   cursor: pointer;
+    //   padding: 16px 12px;
+    // }
+    // button span {
+    //   font-size: 14px;
+    //   font-weight: 600;
+    // }
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1550px) {
   .container {
-    width: 43%;
-    height: 100vh;
-    background-color: #fff;
+    width: 100%;
+    height: 70%;
+    // background-color: #fff;
     border-radius: 0px 25px 25px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  .content-left {
+    width: 60%;
+  }
   .container_center {
-    width: 70%;
+    background-size: cover;
+    width: 460px;
+    height: 520px;
+    // height: 100%;
+    // width: 30%;
     margin: 0px auto;
+    position: relative;
   }
-}
+  .formlogin {
+    width: 322px;
+    margin: 0px auto;
+    position: absolute;
+    top: 104px;
+    .title {
+      display: block;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+  .infor {
+    margin: 10%;
+    margin-top: 5%;
+    width: 55px;
+    height: 55px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
 
-.infor {
-  width: 55px;
-  height: 55px;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
-}
-.formlogin {
-  margin-top: 30px;
-  .title {
-    display: block;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  .container_input {
+  .form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    .container_input {
+      display: flex;
+      flex-direction: column;
+      margin-left: 65px;
+      margin-bottom: 33px;
+      margin-right: -113px;
+    }
+    .container_input span {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #475569;
+    }
+    .container_input input {
+      // padding: 16px;
+      height: 53px;
+      margin-left: -5px;
+      margin-right: 13px;
+      margin-top: -13px;
+      background-color: transparent;
+      outline: none;
+      border-radius: 10px;
+      border: none;
+      // border: 1px solid #939dac;
+    }
   }
-  .container_input span {
-    margin-top: 16px;
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #475569;
+  .remember_pass {
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
-  .container_input input {
-    padding: 14px 16px;
-    background-color: #fff;
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    border: 1px solid #939dac;
+  .warning_login {
+    display: block;
+    height: 15px;
+    margin-top: 25px;
+    margin-left: 50px;
+    span {
+      color: rgb(250, 41, 41);
+    }
+  }
+  .container_button {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    img {
+      margin: 0px auto;
+      width: 180px;
+      cursor: pointer;
+    }
+    // button {
+    //   border: none;
+    //   outline: none;
+    //   border-radius: 30px;
+    //   cursor: pointer;
+    //   padding: 16px 12px;
+    // }
+    // button span {
+    //   font-size: 14px;
+    //   font-weight: 600;
+    // }
   }
 }
-.remember_pass {
-  margin: 16px 0px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.warning_login {
-  display: block;
-  margin: 12px 0px;
-  span {
-    color: rgb(250, 41, 41);
+@media (min-width: 1550px) and (max-width: 2000px) {
+  .container {
+    width: 100%;
+    height: 70%;
+    // background-color: #fff;
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-}
-.container_button {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  button {
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    cursor: pointer;
-    padding: 16px 12px;
+  .content-left {
+    width: 60%;
   }
-  button span {
-    font-size: 14px;
-    font-weight: 600;
+  .container_center {
+    background-size: cover;
+    width: 460px;
+    height: 520px;
+    // height: 100%;
+    // width: 30%;
+    margin: 0px auto;
+    position: relative;
   }
-  .login {
-    color: #fff;
-    background-color: #082d67;
+  .formlogin {
+    width: 322px;
+    margin: 0px auto;
+    position: absolute;
+    top: 143px;
+    .title {
+      display: block;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
   }
-  .register {
-    background-color: #fff;
-    border: 1px solid #939dac;
-    color: #939dac;
+  .infor {
+    margin: 10%;
+    margin-top: 5%;
+    width: 55px;
+    height: 55px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    .container_input {
+      display: flex;
+      flex-direction: column;
+      margin-left: 65px;
+      margin-bottom: 33px;
+      margin-right: -58px;
+    }
+    .container_input span {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #475569;
+    }
+    .container_input input {
+      // padding: 16px;
+      height: 53px;
+      margin-left: -5px;
+      margin-right: 13px;
+      margin-top: -13px;
+      background-color: transparent;
+      outline: none;
+      border-radius: 10px;
+      border: none;
+      // border: 1px solid #939dac;
+    }
+  }
+  .remember_pass {
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .warning_login {
+    display: block;
+    height: 15px;
+    margin-top: 25px;
+    margin-left: 50px;
+    span {
+      color: rgb(250, 41, 41);
+    }
+  }
+  .container_button {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    img {
+      margin: 0px auto;
+      width: 180px;
+      cursor: pointer;
+    }
+    // button {
+    //   border: none;
+    //   outline: none;
+    //   border-radius: 30px;
+    //   cursor: pointer;
+    //   padding: 16px 12px;
+    // }
+    // button span {
+    //   font-size: 14px;
+    //   font-weight: 600;
+    // }
   }
 }

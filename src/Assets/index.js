@@ -7,6 +7,11 @@ const images = {
   logo: require("./images/logo.png"),
   background: require("./images/background.jpg"),
   test: require("./images/2222.png"),
+  registerButton: require("./images/regis-button.png"),
+  loginButton: require("./images/login-button.png"),
+  formLogin: require("./images/panel-login.png"),
+  formRegis: require("./images/register.png"),
+  backgroundLogin: require("./images/background.png"),
 };
 
 export default images;

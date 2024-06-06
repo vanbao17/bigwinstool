@@ -57,93 +57,176 @@ function Register() {
         });
     }
   };
+  if (warning.length > 1) {
+    alert("Đăng nhập không thành công");
+  }
   return (
     <div
       className={cx("wrapper")}
-      style={{ backgroundImage: `url(${images.login})` }}
+      style={{ backgroundImage: `url(${images.backgroundLogin})` }}
     >
       <div className={cx("container")}>
-        <div className={cx("container_center")}>
-          <div className={cx("infor")}>
-            <div className={cx("image")}>
-              <img src={images.logo}></img>
-            </div>
-            <div></div>
-          </div>
+        <div className={cx("content-left")}></div>
+        <div
+          className={cx("container_center")}
+          style={{ backgroundImage: `url(${images.formRegis})` }}
+        >
+          <div className={cx("infor")}></div>
           <div className={cx("formlogin")}>
-            <span className={cx("title")}>Đăng ký</span>
             <div className={cx("form")}>
-              <div className={cx("container_input")}>
-                <span>Tên đăng nhập*</span>
+              <div className={cx("container_input", "input1")}>
+                <span></span>
                 <input
                   ref={refUsername}
-                  placeholder="vd:username"
                   type="text"
                   className={cx("username")}
                   name="username"
                 ></input>
               </div>
-              <div className={cx("container_input")}>
-                <span>Mật khẩu*</span>
+              <div className={cx("container_input", "input2")}>
+                <span></span>
                 <input
                   ref={refPassword}
-                  placeholder="********"
                   type="password"
                   className={cx("password")}
                   name="password"
                 ></input>
               </div>
-              <div className={cx("container_input")}>
-                <span>Nhập lại mật khẩu*</span>
+              <div className={cx("container_input", "input3")}>
+                <span></span>
                 <input
                   ref={refPasswordConfirm}
-                  placeholder="********"
                   type="password"
-                  className={cx("password_seacond")}
-                  name="password_seacond"
+                  className={cx("password")}
+                  name="password"
                 ></input>
               </div>
-              <div className={cx("container_input")}>
-                <span>Nhập số điện thoại*</span>
+              <div className={cx("container_input", "input4")}>
+                <span></span>
                 <input
-                  placeholder="0123456789"
                   ref={refSdt}
                   type="text"
-                  className={cx("phone")}
-                  name="phone"
+                  className={cx("password")}
+                  name="password"
                 ></input>
               </div>
             </div>
-            <div className={cx("remember_pass")}>
-              <input
-                type="checkbox"
-                className={cx("remember_input")}
-                name="remember_input"
-              ></input>
-              <span>Ghi nhớ mật khẩu</span>
-            </div>
-            <div className={cx("warning_login")}>
-              <span>{warning.length > 1 ? <span>{warning}</span> : <></>}</span>
-            </div>
+
+            {/* <div className={cx("warning_login")}>
+              {warning.length > 1 ? (
+                <span>Đăng nhập không thành công</span>
+              ) : (
+                <></>
+              )}
+            </div> */}
             <div className={cx("container_button")}>
-              <button className={cx("login")} onClick={handleRegister}>
-                <span>Đăng Ký</span>
-              </button>
-              <button className={cx("register")}>
-                <span
-                  onClick={() => {
-                    nav("/Account");
-                  }}
-                >
-                  {" "}
-                  Đăng Nhập
-                </span>
-              </button>
+              <img onClick={handleRegister} src={images.registerButton}></img>
+              <img
+                onClick={() => {
+                  nav("/Account");
+                }}
+                src={images.loginButton}
+              ></img>
+              {/* <button onClick={handleLogin} className={cx("login")}></button>
+              <button
+                onClick={() => {
+                  nav("/Account/Register");
+                }}
+                className={cx("register")}
+              >
+                
+              </button> */}
             </div>
           </div>
         </div>
       </div>
     </div>
+    // <div
+    //   className={cx("wrapper")}
+    //   style={{ backgroundImage: `url(${images.login})` }}
+    // >
+    //   <div className={cx("container")}>
+    //     <div className={cx("container_center")}>
+    //       <div className={cx("infor")}>
+    //         <div className={cx("image")}>
+    //           <img src={images.logo}></img>
+    //         </div>
+    //         <div></div>
+    //       </div>
+    //       <div className={cx("formlogin")}>
+    //         <span className={cx("title")}>Đăng ký</span>
+    //         <div className={cx("form")}>
+    //           <div className={cx("container_input")}>
+    //             <span>Tên đăng nhập*</span>
+    //             <input
+    //               ref={refUsername}
+    //               placeholder="vd:username"
+    //               type="text"
+    //               className={cx("username")}
+    //               name="username"
+    //             ></input>
+    //           </div>
+    //           <div className={cx("container_input")}>
+    //             <span>Mật khẩu*</span>
+    //             <input
+    //               ref={refPassword}
+    //               placeholder="********"
+    //               type="password"
+    //               className={cx("password")}
+    //               name="password"
+    //             ></input>
+    //           </div>
+    //           <div className={cx("container_input")}>
+    //             <span>Nhập lại mật khẩu*</span>
+    //             <input
+    //               ref={refPasswordConfirm}
+    //               placeholder="********"
+    //               type="password"
+    //               className={cx("password_seacond")}
+    //               name="password_seacond"
+    //             ></input>
+    //           </div>
+    //           <div className={cx("container_input")}>
+    //             <span>Nhập số điện thoại*</span>
+    //             <input
+    //               placeholder="0123456789"
+    //               ref={refSdt}
+    //               type="text"
+    //               className={cx("phone")}
+    //               name="phone"
+    //             ></input>
+    //           </div>
+    //         </div>
+    //         <div className={cx("remember_pass")}>
+    //           <input
+    //             type="checkbox"
+    //             className={cx("remember_input")}
+    //             name="remember_input"
+    //           ></input>
+    //           <span>Ghi nhớ mật khẩu</span>
+    //         </div>
+    //         <div className={cx("warning_login")}>
+    //           <span>{warning.length > 1 ? <span>{warning}</span> : <></>}</span>
+    //         </div>
+    //         <div className={cx("container_button")}>
+    //           <button className={cx("login")} onClick={handleRegister}>
+    //             <span>Đăng Ký</span>
+    //           </button>
+    //           <button className={cx("register")}>
+    //             <span
+    //               onClick={() => {
+    //                 nav("/Account");
+    //               }}
+    //             >
+    //               {" "}
+    //               Đăng Nhập
+    //             </span>
+    //           </button>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 

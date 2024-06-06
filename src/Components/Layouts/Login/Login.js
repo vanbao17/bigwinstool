@@ -42,21 +42,23 @@ function Login() {
   return (
     <div
       className={cx("wrapper")}
-      style={{ backgroundImage: `url(${images.login})` }}
+      style={{ backgroundImage: `url(${images.backgroundLogin})` }}
     >
       <div className={cx("container")}>
-        <div className={cx("container_center")}>
+        <div className={cx("content-left")}></div>
+        <div
+          className={cx("container_center")}
+          style={{ backgroundImage: `url(${images.formLogin})` }}
+        >
           <div className={cx("infor")}>
-            <div className={cx("image")}>
+            <div>
               <img src={images.logo}></img>
             </div>
-            <div></div>
           </div>
           <div className={cx("formlogin")}>
-            <span className={cx("title")}>Đăng nhập</span>
             <div className={cx("form")}>
+              <span></span>
               <div className={cx("container_input")}>
-                <span>Tên đăng nhập*</span>
                 <input
                   ref={refUsername}
                   type="text"
@@ -65,7 +67,7 @@ function Login() {
                 ></input>
               </div>
               <div className={cx("container_input")}>
-                <span>Mật khẩu*</span>
+                <span></span>
                 <input
                   ref={refPassword}
                   type="password"
@@ -74,14 +76,7 @@ function Login() {
                 ></input>
               </div>
             </div>
-            <div className={cx("remember_pass")}>
-              <input
-                type="checkbox"
-                className={cx("remember_input")}
-                name="remember_input"
-              ></input>
-              <span>Ghi nhớ mật khẩu</span>
-            </div>
+
             <div className={cx("warning_login")}>
               {warning.length > 1 ? (
                 <span>Đăng nhập không thành công</span>
@@ -90,17 +85,22 @@ function Login() {
               )}
             </div>
             <div className={cx("container_button")}>
-              <button onClick={handleLogin} className={cx("login")}>
-                <span>Đăng nhập</span>
-              </button>
+              <img onClick={handleLogin} src={images.loginButton}></img>
+              <img
+                onClick={() => {
+                  nav("/Account/Register");
+                }}
+                src={images.registerButton}
+              ></img>
+              {/* <button onClick={handleLogin} className={cx("login")}></button>
               <button
                 onClick={() => {
                   nav("/Account/Register");
                 }}
                 className={cx("register")}
               >
-                <span>Đăng ký</span>
-              </button>
+                
+              </button> */}
             </div>
           </div>
         </div>
