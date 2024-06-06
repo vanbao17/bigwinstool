@@ -66,7 +66,7 @@ function Login() {
           style={{
             width: "15%",
             height: 0,
-            top: "6%",
+            top: "4%",
             right: "12%",
             position: "absolute",
           }}
@@ -83,6 +83,12 @@ function Login() {
             style={{
               width: "100%",
               position: "absolute",
+              overflow: "hidden",
+              backgroundColor: "#0E012D",
+              border: "2px solid #420655",
+              zIndex: "999",
+              padding: "0px 12px",
+              borderRadius: "50px",
             }}
             frameBorder="0"
             className="giphy-embed"
@@ -110,7 +116,13 @@ function Login() {
             width="100%"
             style={{
               position: "absolute",
+              position: "absolute",
               overflow: "hidden",
+              backgroundColor: "#0E012D",
+              border: "2px solid #420655",
+              zIndex: "999",
+              padding: "0px 12px",
+              borderRadius: "50px",
             }}
             frameBorder="0"
             className="giphy-embed"

@@ -3,6 +3,7 @@ import styles from "./Register.module.scss";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import images from "../../../Assets";
+import { useMediaQuery } from "react-responsive";
 const cx = classNames.bind(styles);
 
 function Register() {
@@ -12,6 +13,8 @@ function Register() {
   const refPasswordConfirm = useRef();
   const refSdt = useRef();
   const [warning, setwarning] = useState("");
+  const [index, setindex] = useState(1);
+  const isSmallScreen = useMediaQuery({ query: "(max-width:768px)" });
   const handleRegister = () => {
     let username = refUsername.current.value;
     let password = refPassword.current.value;
@@ -65,6 +68,73 @@ function Register() {
       className={cx("wrapper")}
       style={{ backgroundImage: `url(${images.backgroundLogin})` }}
     >
+      {isSmallScreen == false ? (
+        <div
+          style={{
+            width: "15%",
+            height: 0,
+            top: "0",
+            right: "12%",
+            position: "absolute",
+          }}
+        >
+          <iframe
+            src={
+              index == 1
+                ? "https://giphy.com/embed/WugfEKJQTzG7QOv9jA"
+                : index == 2
+                ? "https://giphy.com/embed/CFaGnXWf6GABHKKZcC"
+                : "https://giphy.com/embed/PIdyzBZ8XiKQWfgwYk"
+            }
+            width="100%"
+            style={{
+              position: "absolute",
+              overflow: "hidden",
+              backgroundColor: "#0E012D",
+              border: "2px solid #420655",
+              zIndex: "999",
+              padding: "0px 12px",
+              borderRadius: "50px",
+            }}
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </div>
+      ) : (
+        <div
+          style={{
+            width: "60%",
+            height: 0,
+            top: "5%",
+            paddingBottom: "100%",
+            position: "absolute",
+          }}
+        >
+          <iframe
+            src={
+              index == 1
+                ? "https://giphy.com/embed/WugfEKJQTzG7QOv9jA"
+                : index == 2
+                ? "https://giphy.com/embed/CFaGnXWf6GABHKKZcC"
+                : "https://giphy.com/embed/PIdyzBZ8XiKQWfgwYk"
+            }
+            width="100%"
+            style={{
+              position: "absolute",
+              overflow: "hidden",
+              backgroundColor: "#0E012D",
+              border: "2px solid #420655",
+              zIndex: "999",
+              padding: "0px 12px",
+              borderRadius: "50px",
+            }}
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
       <div className={cx("container")}>
         <div className={cx("content-left")}></div>
         <div
