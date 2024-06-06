@@ -78,6 +78,16 @@ function Register() {
             position: "absolute",
           }}
         >
+          <div
+            style={{
+              width: "100%",
+              height: "150px",
+              position: "absolute",
+              overflow: "hidden",
+              zIndex: "999",
+              borderRadius: "50px",
+            }}
+          ></div>
           <iframe
             src={
               index == 1
@@ -92,7 +102,7 @@ function Register() {
               overflow: "hidden",
               backgroundColor: "#0E012D",
               border: "12px solid #420655",
-              zIndex: "999",
+              zIndex: "900",
               padding: "0px 12px",
               borderRadius: "50px",
             }}
@@ -111,6 +121,16 @@ function Register() {
             position: "absolute",
           }}
         >
+          <div
+            style={{
+              width: "100%",
+              height: "150px",
+              position: "absolute",
+              overflow: "hidden",
+              zIndex: "999",
+              borderRadius: "50px",
+            }}
+          ></div>
           <iframe
             src={
               index == 1
@@ -125,7 +145,7 @@ function Register() {
               overflow: "hidden",
               backgroundColor: "#0E012D",
               border: "12px solid #420655",
-              zIndex: "999",
+              zIndex: "900",
               borderRadius: "50px",
             }}
             frameBorder="0"

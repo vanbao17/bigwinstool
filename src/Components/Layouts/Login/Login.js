@@ -71,6 +71,16 @@ function Login() {
             position: "absolute",
           }}
         >
+          <div
+            style={{
+              width: "100%",
+              height: "150px",
+              position: "absolute",
+              overflow: "hidden",
+              zIndex: "999",
+              borderRadius: "50px",
+            }}
+          ></div>
           <iframe
             src={
               index == 1
@@ -86,7 +96,7 @@ function Login() {
               overflow: "hidden",
               backgroundColor: "#0E012D",
               border: "12px solid #420655",
-              zIndex: "999",
+              zIndex: "900",
               borderRadius: "50px",
             }}
             frameBorder="0"
@@ -104,6 +114,16 @@ function Login() {
             position: "absolute",
           }}
         >
+          <div
+            style={{
+              width: "100%",
+              height: "150px",
+              position: "absolute",
+              overflow: "hidden",
+              zIndex: "999",
+              borderRadius: "50px",
+            }}
+          ></div>
           <iframe
             src={
               index == 1
@@ -118,7 +138,7 @@ function Login() {
               overflow: "hidden",
               backgroundColor: "#0E012D",
               border: "12px solid #420655",
-              zIndex: "999",
+              zIndex: "900",
               borderRadius: "50px",
             }}
             frameBorder="0"
