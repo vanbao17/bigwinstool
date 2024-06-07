@@ -43,32 +43,36 @@
     }
   }
   .infor {
-    margin: 10%;
-    margin-top: 5%;
-    width: 55px;
-    height: 55px;
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-    }
+    z-index: 999;
+    color: #fff;
+    font-size: 25px;
+    margin-left: -12px;
   }
 
   .form {
     display: flex;
     flex-direction: column;
-    margin-top: 23px;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     .container_input {
       display: flex;
       flex-direction: column;
+      width: 100%;
+      margin-left: -12px;
+    }
+    .container_input span {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #fff;
     }
     .container_input input {
       padding: 14px 16px;
-      background-color: transparent;
+      background-color: white;
       outline: none;
       border-radius: 10px;
-      margin-bottom: 45px;
       border: none;
+      border: 1px solid #939dac;
     }
   }
   .remember_pass {
@@ -137,7 +141,8 @@
   .formlogin {
     width: 322px;
     margin: 0px auto;
-    position: absolute;
+    z-index: 99;
+    position: relative;
     .title {
       display: block;
       font-size: 20px;
@@ -147,45 +152,39 @@
     }
   }
   .infor {
-    margin: 10%;
-    margin-top: 7%;
-    width: 55px;
-    height: 55px;
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-    }
+    z-index: 999;
+    color: #fff;
+    font-size: 30px;
+    margin-left: -12px;
   }
 
   .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     .container_input {
       display: flex;
       flex-direction: column;
-      margin-left: 48px;
-      margin-bottom: 26px;
-      margin-right: -113px;
+      width: 100%;
+      margin-left: -12px;
     }
     .container_input span {
       margin-top: 16px;
-      margin-bottom: 8px;
       font-size: 14px;
-      color: #475569;
+      color: #fff;
     }
     .container_input input {
       // padding: 16px;
       height: 53px;
-      margin-left: 10px;
-      margin-right: 13px;
-      margin-top: -13px;
-      background-color: transparent;
+
+      background-color: white;
       outline: none;
       border-radius: 10px;
       border: none;
-      // border: 1px solid #939dac;
+      border: 1px solid #939dac;
+      text-indent: 12px;
     }
   }
   .remember_pass {
@@ -206,12 +205,12 @@
   .container_button {
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 10px;
-    margin-left: 25px;
+    margin-left: -12px;
     img {
       margin: 0px auto;
-      width: 180px;
+      width: 150px;
       cursor: pointer;
     }
     // button {
@@ -253,7 +252,8 @@
   .formlogin {
     width: 322px;
     margin: 0px auto;
-    position: absolute;
+    z-index: 99;
+    position: relative;
     .title {
       display: block;
       font-size: 20px;
@@ -263,45 +263,39 @@
     }
   }
   .infor {
-    margin: 10%;
-    margin-top: 7%;
-    width: 55px;
-    height: 55px;
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-    }
+    z-index: 999;
+    color: #fff;
+    font-size: 30px;
+    margin-left: -12px;
   }
 
   .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     .container_input {
       display: flex;
       flex-direction: column;
-      margin-left: 48px;
-      margin-bottom: 26px;
-      margin-right: -113px;
+      width: 100%;
+      margin-left: -12px;
     }
     .container_input span {
       margin-top: 16px;
-      margin-bottom: 8px;
       font-size: 14px;
-      color: #475569;
+      color: #fff;
     }
     .container_input input {
       // padding: 16px;
       height: 53px;
-      margin-left: 10px;
-      margin-right: 13px;
-      margin-top: -13px;
-      background-color: transparent;
+
+      background-color: white;
       outline: none;
       border-radius: 10px;
       border: none;
-      // border: 1px solid #939dac;
+      border: 1px solid #939dac;
+      text-indent: 12px;
     }
   }
   .remember_pass {
@@ -322,12 +316,12 @@
   .container_button {
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 10px;
-    margin-left: 25px;
+    margin-left: -12px;
     img {
       margin: 0px auto;
-      width: 180px;
+      width: 150px;
       cursor: pointer;
     }
     // button {

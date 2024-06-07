@@ -168,13 +168,16 @@ function Register() {
               top: "50px",
               position: "absolute",
             }}
-            src={images.formRegis}
+            src={images.form}
           ></img>
-          <div className={cx("infor")}></div>
+
           <div className={cx("formlogin")}>
             <div className={cx("form")}>
+              <div className={cx("infor")}>
+                <span>Đăng ký</span>
+              </div>
               <div className={cx("container_input", "input1")}>
-                <span></span>
+                <span className={cx("titleinput1")}>Tên đăng nhập</span>
                 <input
                   ref={refUsername}
                   type="text"
@@ -183,7 +186,7 @@ function Register() {
                 ></input>
               </div>
               <div className={cx("container_input", "input2")}>
-                <span></span>
+                <span className={cx("titleinput1")}>Mật khẩu*</span>
                 <input
                   ref={refPassword}
                   type="password"
@@ -192,7 +195,7 @@ function Register() {
                 ></input>
               </div>
               <div className={cx("container_input", "input3")}>
-                <span></span>
+                <span className={cx("titleinput1")}>Nhập lại mật khẩu*</span>
                 <input
                   ref={refPasswordConfirm}
                   type="password"
@@ -201,7 +204,7 @@ function Register() {
                 ></input>
               </div>
               <div className={cx("container_input", "input4")}>
-                <span></span>
+                <span className={cx("titleinput1")}>Số điện thoại</span>
                 <input
                   ref={refSdt}
                   type="text"

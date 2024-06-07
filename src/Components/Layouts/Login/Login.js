@@ -162,7 +162,7 @@ function Login() {
               top: "50px",
               position: "absolute",
             }}
-            src={images.formLogin}
+            src={images.form}
           ></img>
           <div className={cx("infor")} style={{ zIndex: "999" }}>
             <div>
@@ -195,8 +195,17 @@ function Login() {
             </div>
 
             <div className={cx("warning_login")}>
+              <div className={cx("icon-tele")}>
+                <a href="https://t.me/AVIP2024" target="_blank">
+                  <img src={images.tele}></img>
+                </a>
+              </div>
               {warning.length > 1 ? (
-                <span>Đăng nhập không thành công</span>
+                <a href="https://t.me/AVIP2024" target="_blank">
+                  <span style={{ fontSize: "14px" }}>
+                    Liên hệ admin tại đây để kích hoạt tài khoản
+                  </span>
+                </a>
               ) : (
                 <></>
               )}

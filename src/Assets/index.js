@@ -12,6 +12,8 @@ const images = {
   formLogin: require("./images/panel-login.png"),
   formRegis: require("./images/register.png"),
   backgroundLogin: require("./images/background.png"),
+  form: require("./images/form.png"),
+  tele: require("./images/icon.png"),
 };
 
 export default images;
