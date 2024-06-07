@@ -202,8 +202,12 @@ function Login() {
               </div>
               {warning.length > 1 ? (
                 <a href="https://t.me/AVIP2024" target="_blank">
-                  <span style={{ fontSize: "14px" }}>
-                    Liên hệ admin tại đây để kích hoạt tài khoản
+                  <span
+                    style={{
+                      fontSize: "14px",
+                    }}
+                  >
+                    Liên hệ admin để kích hoạt tài khoản
                   </span>
                 </a>
               ) : (
