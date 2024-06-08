@@ -201,7 +201,7 @@ function Login() {
                 </a>
               </div>
               {warning.length > 1 ? (
-                <a href="https://t.me/AVIP2024" target="_blank">
+                <a href="https://t.me/TANLONGLIVE" target="_blank">
                   <span
                     style={{
                       fontSize: "14px",
