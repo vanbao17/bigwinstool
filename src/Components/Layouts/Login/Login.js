@@ -196,7 +196,7 @@ function Login() {
 
             <div className={cx("warning_login")}>
               <div className={cx("icon-tele")}>
-                <a href="https://t.me/AVIP2024" target="_blank">
+                <a href="https://t.me/TANLONGLIVE" target="_blank">
                   <img src={images.tele}></img>
                 </a>
               </div>
